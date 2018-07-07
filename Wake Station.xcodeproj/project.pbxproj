@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8C5CFE420F167A300AE8946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5CFE320F167A300AE8946 /* AppDelegate.swift */; };
+		D8C5CFE620F167A300AE8946 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5CFE520F167A300AE8946 /* MainViewController.swift */; };
+		D8C5CFEB20F167A300AE8946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C5CFEA20F167A300AE8946 /* Assets.xcassets */; };
+		D8C5CFEE20F167A300AE8946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8C5CFEC20F167A300AE8946 /* LaunchScreen.storyboard */; };
+		D8C5CFFA20F1693500AE8946 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C5CFF920F1693500AE8946 /* MainViewController.xib */; };
+		D8C5D00320F16C6800AE8946 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5D00220F16C6800AE8946 /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8C5CFE020F167A300AE8946 /* Wake Station.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wake Station.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C5CFE320F167A300AE8946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8C5CFE520F167A300AE8946 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D8C5CFEA20F167A300AE8946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8C5CFED20F167A300AE8946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8C5CFEF20F167A300AE8946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C5CFF920F1693500AE8946 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		D8C5D00220F16C6800AE8946 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C5CFDD20F167A300AE8946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8C5CFD720F167A300AE8946 = {
+			isa = PBXGroup;
+			children = (
+				D8C5CFE220F167A300AE8946 /* Wake Station */,
+				D8C5CFE120F167A300AE8946 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C5CFE120F167A300AE8946 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5CFE020F167A300AE8946 /* Wake Station.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C5CFE220F167A300AE8946 /* Wake Station */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5CFFC20F16AD600AE8946 /* Controller */,
+				D8C5CFF720F1686900AE8946 /* Views */,
+				D8C5CFF520F1685800AE8946 /* Application */,
+				D8C5CFEA20F167A300AE8946 /* Assets.xcassets */,
+			);
+			path = "Wake Station";
+			sourceTree = "<group>";
+		};
+		D8C5CFF520F1685800AE8946 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5CFEC20F167A300AE8946 /* LaunchScreen.storyboard */,
+				D8C5CFEF20F167A300AE8946 /* Info.plist */,
+				D8C5CFE320F167A300AE8946 /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		D8C5CFF720F1686900AE8946 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5D00120F16C5800AE8946 /* Utilities */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D8C5CFFC20F16AD600AE8946 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5CFE520F167A300AE8946 /* MainViewController.swift */,
+				D8C5CFF920F1693500AE8946 /* MainViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D8C5D00120F16C5800AE8946 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D8C5D00220F16C6800AE8946 /* Colors.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8C5CFDF20F167A300AE8946 /* Wake Station */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C5CFF220F167A300AE8946 /* Build configuration list for PBXNativeTarget "Wake Station" */;
+			buildPhases = (
+				D8C5CFDC20F167A300AE8946 /* Sources */,
+				D8C5CFDD20F167A300AE8946 /* Frameworks */,
+				D8C5CFDE20F167A300AE8946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wake Station";
+			productName = "Wake Station";
+			productReference = D8C5CFE020F167A300AE8946 /* Wake Station.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C5CFD820F167A300AE8946 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jashan Shewakramani";
+				TargetAttributes = {
+					D8C5CFDF20F167A300AE8946 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D8C5CFDB20F167A300AE8946 /* Build configuration list for PBXProject "Wake Station" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8C5CFD720F167A300AE8946;
+			productRefGroup = D8C5CFE120F167A300AE8946 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C5CFDF20F167A300AE8946 /* Wake Station */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8C5CFDE20F167A300AE8946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C5CFEE20F167A300AE8946 /* LaunchScreen.storyboard in Resources */,
+				D8C5CFFA20F1693500AE8946 /* MainViewController.xib in Resources */,
+				D8C5CFEB20F167A300AE8946 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C5CFDC20F167A300AE8946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C5CFE620F167A300AE8946 /* MainViewController.swift in Sources */,
+				D8C5D00320F16C6800AE8946 /* Colors.swift in Sources */,
+				D8C5CFE420F167A300AE8946 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8C5CFEC20F167A300AE8946 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8C5CFED20F167A300AE8946 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8C5CFF020F167A300AE8946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8C5CFF120F167A300AE8946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8C5CFF320F167A300AE8946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wake Station/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jashan.com.Wake-Station";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8C5CFF420F167A300AE8946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wake Station/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jashan.com.Wake-Station";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C5CFDB20F167A300AE8946 /* Build configuration list for PBXProject "Wake Station" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C5CFF020F167A300AE8946 /* Debug */,
+				D8C5CFF120F167A300AE8946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C5CFF220F167A300AE8946 /* Build configuration list for PBXNativeTarget "Wake Station" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C5CFF320F167A300AE8946 /* Debug */,
+				D8C5CFF420F167A300AE8946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8C5CFD820F167A300AE8946 /* Project object */;
+}
