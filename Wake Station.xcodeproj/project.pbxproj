@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336FDD847F06009F65F4E411 /* libPods-Wake Station.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47481D31AB97C14008DA166E /* libPods-Wake Station.a */; };
+		D892DAEF20F1769E0092D68E /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892DAEE20F1769E0092D68E /* PrivateConstants.swift */; };
 		D8C5CFE420F167A300AE8946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5CFE320F167A300AE8946 /* AppDelegate.swift */; };
 		D8C5CFE620F167A300AE8946 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5CFE520F167A300AE8946 /* MainViewController.swift */; };
 		D8C5CFEB20F167A300AE8946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8C5CFEA20F167A300AE8946 /* Assets.xcassets */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47481D31AB97C14008DA166E /* libPods-Wake Station.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wake Station.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDE3CC0463E436D92A7E7DD /* Pods-Wake Station.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wake Station.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wake Station/Pods-Wake Station.debug.xcconfig"; sourceTree = "<group>"; };
+		98FEA47D686268A30C97C552 /* Pods-Wake Station.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wake Station.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wake Station/Pods-Wake Station.release.xcconfig"; sourceTree = "<group>"; };
+		D892DAEE20F1769E0092D68E /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
 		D8C5CFE020F167A300AE8946 /* Wake Station.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wake Station.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C5CFE320F167A300AE8946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8C5CFE520F167A300AE8946 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336FDD847F06009F65F4E411 /* libPods-Wake Station.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E73E322C25AF1B9920E2690 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47481D31AB97C14008DA166E /* libPods-Wake Station.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7AE03BFE23931FC4E5D7BE97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CDE3CC0463E436D92A7E7DD /* Pods-Wake Station.debug.xcconfig */,
+				98FEA47D686268A30C97C552 /* Pods-Wake Station.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D8C5CFD720F167A300AE8946 = {
 			isa = PBXGroup;
 			children = (
 				D8C5CFE220F167A300AE8946 /* Wake Station */,
 				D8C5CFE120F167A300AE8946 /* Products */,
+				7AE03BFE23931FC4E5D7BE97 /* Pods */,
+				5E73E322C25AF1B9920E2690 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +96,7 @@
 				D8C5CFEC20F167A300AE8946 /* LaunchScreen.storyboard */,
 				D8C5CFEF20F167A300AE8946 /* Info.plist */,
 				D8C5CFE320F167A300AE8946 /* AppDelegate.swift */,
+				D892DAEE20F1769E0092D68E /* PrivateConstants.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -106,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8C5CFF220F167A300AE8946 /* Build configuration list for PBXNativeTarget "Wake Station" */;
 			buildPhases = (
+				53B431E3E7197207C61F21CB /* [CP] Check Pods Manifest.lock */,
 				D8C5CFDC20F167A300AE8946 /* Sources */,
 				D8C5CFDD20F167A300AE8946 /* Frameworks */,
 				D8C5CFDE20F167A300AE8946 /* Resources */,
+				8A959A89555190D39F159156 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,12 +194,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53B431E3E7197207C61F21CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wake Station-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A959A89555190D39F159156 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wake Station/Pods-Wake Station-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wake Station/Pods-Wake Station-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D8C5CFDC20F167A300AE8946 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D8C5CFE620F167A300AE8946 /* MainViewController.swift in Sources */,
+				D892DAEF20F1769E0092D68E /* PrivateConstants.swift in Sources */,
 				D8C5D00320F16C6800AE8946 /* Colors.swift in Sources */,
 				D8C5CFE420F167A300AE8946 /* AppDelegate.swift in Sources */,
 			);
@@ -306,6 +375,7 @@
 		};
 		D8C5CFF320F167A300AE8946 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CDE3CC0463E436D92A7E7DD /* Pods-Wake Station.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +393,7 @@
 		};
 		D8C5CFF420F167A300AE8946 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98FEA47D686268A30C97C552 /* Pods-Wake Station.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
