@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		336FDD847F06009F65F4E411 /* libPods-Wake Station.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47481D31AB97C14008DA166E /* libPods-Wake Station.a */; };
+		D805C78E20F1F57D00E055D0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D805C78D20F1F57D00E055D0 /* UIViewExtension.swift */; };
+		D85555F820F2960F0037711C /* Dimens.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85555F720F2960F0037711C /* Dimens.swift */; };
 		D892DAEF20F1769E0092D68E /* PrivateConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D892DAEE20F1769E0092D68E /* PrivateConstants.swift */; };
 		D8C5CFE420F167A300AE8946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5CFE320F167A300AE8946 /* AppDelegate.swift */; };
 		D8C5CFE620F167A300AE8946 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C5CFE520F167A300AE8946 /* MainViewController.swift */; };
@@ -21,6 +23,8 @@
 		47481D31AB97C14008DA166E /* libPods-Wake Station.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wake Station.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CDE3CC0463E436D92A7E7DD /* Pods-Wake Station.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wake Station.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wake Station/Pods-Wake Station.debug.xcconfig"; sourceTree = "<group>"; };
 		98FEA47D686268A30C97C552 /* Pods-Wake Station.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wake Station.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wake Station/Pods-Wake Station.release.xcconfig"; sourceTree = "<group>"; };
+		D805C78D20F1F57D00E055D0 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		D85555F720F2960F0037711C /* Dimens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimens.swift; sourceTree = "<group>"; };
 		D892DAEE20F1769E0092D68E /* PrivateConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateConstants.swift; sourceTree = "<group>"; };
 		D8C5CFE020F167A300AE8946 /* Wake Station.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wake Station.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C5CFE320F167A300AE8946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				D8C5D00220F16C6800AE8946 /* Colors.swift */,
+				D805C78D20F1F57D00E055D0 /* UIViewExtension.swift */,
+				D85555F720F2960F0037711C /* Dimens.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -221,10 +227,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Wake Station/Pods-Wake Station-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -238,8 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D805C78E20F1F57D00E055D0 /* UIViewExtension.swift in Sources */,
 				D8C5CFE620F167A300AE8946 /* MainViewController.swift in Sources */,
 				D892DAEF20F1769E0092D68E /* PrivateConstants.swift in Sources */,
+				D85555F820F2960F0037711C /* Dimens.swift in Sources */,
 				D8C5D00320F16C6800AE8946 /* Colors.swift in Sources */,
 				D8C5CFE420F167A300AE8946 /* AppDelegate.swift in Sources */,
 			);
